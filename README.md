@@ -60,5 +60,3 @@ Camera Screen             |  Groups Screen
 
 
 
-## Contributing
-PRs are welcome.
