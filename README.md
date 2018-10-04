@@ -1,5 +1,5 @@
 
-## 🚀 React Native Messenger
+## 🚀 Kusani Market & Places
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.55-blue.svg)](https://facebook.github.io/react-native/)
 [![React Navigation V2](https://img.shields.io/badge/React%20Navigation-v2..0.1-blue.svg)](https://reactnavigation.org/)
@@ -12,6 +12,9 @@ Facebook Messenger Implementation using react-native. This is a Work in Progress
 * [React Navigation](https://reactnavigation.org/)
 * [Redux](https://redux.js.org/)
 * [Redux Saga](https://redux-saga.js.org/)
+* [react-native-maps](https://redux-saga.js.org/)
+* [react-native-progress](https://redux-saga.js.org/)
+* [react-native-google-places](https://redux-saga.js.org/)
 * [React Native Paper](https://callstack.github.io/react-native-paper/)
 * [Lottie React Native](https://github.com/react-community/lottie-react-native/)
 * [React Native Camera](https://github.com/react-native-community/react-native-camera)
@@ -22,12 +25,19 @@ Facebook Messenger Implementation using react-native. This is a Work in Progress
 ## Prerequisites
 
 * [Node](https://nodejs.org) v8.10 (it is recommended to install it via [NVM](https://github.com/creationix/nvm))
-* [Yarn](https://yarnpkg.com/)
+* [Yarn](https://yarnpkg.com
+* [Socket.io](https://yarnpkg.com
+* [expressjs](https://yarnpkg.com
+* [mongojs](https://yarnpkg.com
+* [mysql](https://yarnpkg.com
+* [xampp](https://yarnpkg.com
+* [expressjs](https://yarnpkg.com
+* [expressjs](https://yarnpkg.com
 * A development machine set up for React Native by following [these instructions](https://facebook.github.io/react-native/docs/getting-started.html)
 
 ## Getting Started
 
-1. Clone this repo, `git clone https://github.com/victorkvarghese/react-native-messenger.git `
+1. Clone this repo, `git clone https://github.com/Codewebs/ks-mob.git/ `
 2. Go to project's root directory, `cd <your project name>`
 3. Run `yarn` or `npm install` to install dependencies
 4. Run `react-native link`
@@ -55,7 +65,6 @@ Calls Screen              |  Camera Screen
 
 
 ![](https://user-images.githubusercontent.com/15869386/43475979-fd16b340-9514-11e8-9388-7b073af4578c.gif)
-
 
 
 ## Contributing
