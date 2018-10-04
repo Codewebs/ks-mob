@@ -52,12 +52,12 @@ Download here : [Kusani APK v1.0](http://kusani.org) - Updated facebook reaction
 
 ## Screenshots
 
-Groups Screen			   | Camera Screen
-:-------------------------::-------------------------:
-![](https://user-images.githubusercontent.com/15869386/42648337-39681032-8624-11e8-8fec-a33750d67215.png) | ![](https://user-images.githubusercontent.com/15869386/42648341-3cd95c26-8624-11e8-9976-6117736922ed.png)
-
+Camera Screen             |  Groups Screen
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/15869386/42648341-3cd95c26-8624-11e8-9976-6117736922ed.png)  |  ![](https://user-images.githubusercontent.com/15869386/42648337-39681032-8624-11e8-8fec-a33750d67215.png)
 
 ![](https://user-images.githubusercontent.com/15869386/43475979-fd16b340-9514-11e8-9388-7b073af4578c.gif)
+
 
 
 ## Contributing
