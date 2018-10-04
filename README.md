@@ -1,5 +1,5 @@
 
-## 🚀 Kusani Market & Places
+## 🚀 Kusani Markets & Places
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.55-blue.svg)](https://facebook.github.io/react-native/)
 [![React Navigation V2](https://img.shields.io/badge/React%20Navigation-v2..0.1-blue.svg)](https://reactnavigation.org/)
@@ -29,7 +29,7 @@ Facebook Messenger Implementation using react-native. This is a Work in Progress
 * [Node](https://nodejs.org) v8.10 (it is recommended to install it via [NVM](https://github.com/creationix/nvm))
 * [Yarn](https://yarnpkg.com)
 * [mysql](https://www.npmjs.com/package/mysql)
-* [xampp](https://yarnpkg.com)
+* [xampp](https://www.apachefriends.org/fr/index.html)
 * A development machine set up for React Native by following [these instructions](https://facebook.github.io/react-native/docs/getting-started.html)
 
 ## Getting Started
@@ -52,13 +52,13 @@ Download here : [Kusani APK v1.0](http://kusani.org) - Updated facebook reaction
 
 ## Screenshots
 
-Active Screen              |  Groups Screen
+Login Screen              |  Groups Screen
 :-------------------------:|:-------------------------:
-![](https://user-images.githubusercontent.com/15869386/42648284-15525324-8624-11e8-9f81-a20e202b7124.png)  |  ![](https://user-images.githubusercontent.com/15869386/42648337-39681032-8624-11e8-8fec-a33750d67215.png)
+![](https://user-images.githubusercontent.com/15869386/42648337-39681032-8624-11e8-8fec-a33750d67215.png)
 
-Calls Screen              |  Camera Screen
+|  Camera Screen
 :-------------------------:|:-------------------------:
-![](https://user-images.githubusercontent.com/15869386/42648339-3b468e56-8624-11e8-877e-a06b7bf57c4d.png)  |  ![](https://user-images.githubusercontent.com/15869386/42648341-3cd95c26-8624-11e8-9976-6117736922ed.png)
+![](https://user-images.githubusercontent.com/15869386/42648341-3cd95c26-8624-11e8-9976-6117736922ed.png)
 
 
 ![](https://user-images.githubusercontent.com/15869386/43475979-fd16b340-9514-11e8-9388-7b073af4578c.gif)
