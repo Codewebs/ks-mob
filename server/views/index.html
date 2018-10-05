@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+  <h1>Commercant task choose</h1>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <form id="commerceForm">
+                <select class="form-control" id="bookingStatus">
+                    <option value="confirmed">Confirmed</option>
+                </select>
+                <br/>
+                <input type="button" name="submit" value="Confirm" Booking” class="btn btn-danger">
+            </form>
+        </div>
+        <div class="col-xs-6"></div>
+    </div>
+  </div>
+      <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js" type="text/javascript"></script>
+
+
+  <script>
+    
+    var socket = io();
+    	socket.on("connect", ()=>{
+ 			//console.log(socket.id);
+
+             commerceCurrentData = { 
+            "socketId":socket.id,
+            "locationId":"5b9f7ba2fb6fc072da02a839"
+        };
+
+        $.ajax({
+            type: "PUT",
+            url:"/api/commerceLocationSocket/" + commerceCurrentData.locationId,
+            dataType:"json",
+            data:commerceCurrentData
+        }).done(function(response){
+            if(response !== ""){
+            console.log("success de connexion au socket");
+
+            } else{
+                console.log("Error de connexion au socket" + response);
+            }
+        });
+
+        //When emited by user on random nearby commerce
+
+        var commerceRequest = socket.id + "commerceRequest";
+        socket.on(commerceRequest, function(clientData){
+            if(clientData){
+                alert(clientData.userName, "cherche un Taxi! repondez lui si vous etes disponible");
+                console.log(clientData.userName, "cherche un taxi");
+                    //Update booking status to confirmed on btn click
+                $(".btn").click(function(e){
+                    //e.preventDefault();
+                    
+                    var status = $("#bookingStatus").val();
+                    var dataToSend = {
+                        "commerceId":"5b9f7ba2fb6fc072da02a839",
+                        "id": clientData._id,
+                        "status": status,
+                    };
+                    $.ajax({
+                        type: "PUT",
+                        url: "/api/bookings/" + clientData._id,
+                        dataType: "json",
+                        data: dataToSend
+                    }).done(function( response ) {
+                        // Check for a successful (blank) response
+                        if (response !== "") {
+                            console.log("J'accepte de vous conduire "+ clientData.userName);
+                        }
+                        else {
+                            console.log("Error: " + response);
+                        }
+                    });
+                });
+
+
+            }
+        });
+
+
+        socket.on("trackCommerce", function(location){
+            var commerceMovement = [{
+                    lat:3.842580,
+                    long:11.532840
+                },
+                {
+                    lat:3.831560,
+                    long:11.539650
+
+                },
+                {
+                    lat:3.802734,
+                    long:11.562366
+
+                },
+                {
+                    lat:3.790059,
+                    long:11.545207
+                },
+                {
+                    lat:3.779782,
+                    long:11.528392
+                },
+                {
+                    lat:3.152857,
+                    long:101.703529
+                },
+                {
+                    lat:3.796568,
+                    long:11.518783
+                },
+                {
+                    lat:3.823630,
+                    long:11.525646
+            }];
+            var index = 0;
+            var interval = setInterval(function(){
+                var movementObj = commerceMovement[index++];
+                if (index == commerceMovement.length){
+                    clearInterval(interval);
+                    console.log(index)
+
+                }          
+                var commerceCurrentLocation = {
+                    "locationId":location._id,
+                    "latitude": movementObj.lat,
+                    "longitude": movementObj.long
+                };
+                $.ajax({
+                    type: "PUT",
+                    url: "/api/commerceLocation/" + location._id,
+                    dataType: "json",
+                    data: commerceCurrentLocation
+                }).done(function( response ) {
+                    // Check for a successful (blank) response
+                    if (response !== "") {
+                        console.log("commerce Location updated ");
+                    }
+                    else {
+                        console.log("Error: " + response);
+                    }
+                });
+            },5000);
+              
+        });
+
+    	});
+
+
+
+</script>
