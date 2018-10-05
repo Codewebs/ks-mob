@@ -45,7 +45,9 @@ Kusani using react-native & Laravel(server Side). We are still longer work on it
   * On iOS:
     * Open `ios/Messenger.xcodeproj` in Xcode
     * Hit `Run` after selecting the desired device
-7. Enjoy!!!
+7. Start server from the path `<your project name>/server` with cmd 'nodemon'
+8. Change the DomainName of server in `<your project name>/src/Globals.js`
+9. Enjoy!!!
 
 ## Sample APK
 Download here : [Kusani APK v1.0](http://kusani.org) - Updated facebook reactions
