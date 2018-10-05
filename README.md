@@ -39,14 +39,15 @@ Kusani using react-native & Laravel(server Side). We are still longer work on it
 3. Run `yarn` or `npm install` to install dependencies
 4. Run `react-native link`
 5. Connect a mobile device to your development machine
-6. Run the test application:
+6. Change the DomainName of server in `<your project name>/src/Globals.js`
+7. Start server from the path `<your project name>/server` with cmd 'nodemon'
+8. Run the test application:
   * On Android:
     * Run `react-native run-android`
   * On iOS:
     * Open `ios/Messenger.xcodeproj` in Xcode
     * Hit `Run` after selecting the desired device
-7. Start server from the path `<your project name>/server` with cmd 'nodemon'
-8. Change the DomainName of server in `<your project name>/src/Globals.js`
+
 9. Enjoy!!!
 
 ## Sample APK
