@@ -3,7 +3,7 @@
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.55-blue.svg)](https://facebook.github.io/react-native/)
 [![React Navigation V2](https://img.shields.io/badge/React%20Navigation-v2..0.1-blue.svg)](https://reactnavigation.org/)
-[![React Native Maps ](https://img.shields.io/badge/React%20Native%20Laps-blue.svg)](https://reactnavigation.org/)
+[![React Native Maps ](https://img.shields.io/badge/React%20Native%20Maps-blue.svg)](https://github.com/react-community/react-native-maps)
 
 Kusani using react-native & Laravel(server Side). We are still longer work on it
 
