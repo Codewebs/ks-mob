@@ -3,7 +3,16 @@
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.55-blue.svg)](https://facebook.github.io/react-native/)
 [![React Navigation V2](https://img.shields.io/badge/React%20Navigation-v2..0.1-blue.svg)](https://reactnavigation.org/)
+[![React Native Camera](https://img.shields.io/badge/React%20Native%20Camera-v1.1.4-blue.svg)](https://github.com/react-native-community/react-native-camera)
 [![React Native Maps ](https://img.shields.io/badge/React%20Native%20Maps-0.21.0-blue.svg)](https://github.com/react-community/react-native-maps)
+[![React Native Google Places ](https://img.shields.io/badge/React%20Native%20Google%20Places-2.5.2-blue.svg)](https://github.com/tolu360/react-native-google-places)
+[![React Native Star Rating](https://img.shields.io/badge/React%20Native%20Star%20Rating-v1.1.1-blue.svg)](https://github.com/djchie/react-native-star-rating)
+[![React Native Progress](https://img.shields.io/badge/React%20Native%20Progress-v3.5.0-blue.svg)](https://github.com/oblador/react-native-progress)
+
+[![Socket.io ](https://img.shields.io/badge/Socket.io-v2.1.1-green.svg)](https://www.npmjs.com/package/socket.io)
+[![Redux.io ](https://img.shields.io/badge/Redux-v4.0.0-yellowgreen.svg)](https://github.com/reduxjs/redux)
+[![Laravel ](https://img.shields.io/badge/Laravel-v5.4-red.svg)](https://github.com/laravel/laravel)
+
 
 Kusani using react-native & Laravel(server Side). We are still longer work on it
 
