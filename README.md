@@ -1,5 +1,5 @@
 
-## 🚀 Kusani Markets & Places
+## 💚 Kusani Markets & Places
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.55-blue.svg)](https://facebook.github.io/react-native/)
 [![React Navigation V2](https://img.shields.io/badge/React%20Navigation-v2..0.1-blue.svg)](https://reactnavigation.org/)
@@ -11,6 +11,7 @@
 
 [![Socket.io ](https://img.shields.io/badge/Socket.io-v2.1.1-green.svg)](https://www.npmjs.com/package/socket.io)
 [![Redux.io ](https://img.shields.io/badge/Redux-v4.0.0-yellowgreen.svg)](https://github.com/reduxjs/redux)
+
 [![Laravel ](https://img.shields.io/badge/Laravel-v5.4-red.svg)](https://github.com/laravel/laravel)
 
 
